@@ -6,4 +6,5 @@ Todas las imágenes cuyo atributo src comience con la palabra 'iconos'
 
 img[src|='iconos']
 Todas las imágenes cuyo atributo src contenga la palabra 'iconos'
+
 a[href]Todas las a con atributo href

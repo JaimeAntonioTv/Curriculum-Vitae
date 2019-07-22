@@ -40,7 +40,36 @@ h2 ~ p{ /*seleciona todos los p que estén precedidos por un h2*/
 article > h2{/*hace referencia a todos los elementos que sean hijos directos de la etiqueta o elemento*/
     text-decoration: underline;
 }
-
 ul li{/*funciona muy parecido al selector de hijo directo, pero no es tan estricto*/
     list-style-type: circle;
+}
+a[href^='https://']:visited{
+    color: red;
+}
+a:hover{
+    color: green;
+}
+h2:first-child{
+    text-decoration: underline;
+}
+input:focus{
+    width: 160px;
+    height: 140px;
+}
+p::first-letter{
+    text-transform: capitalize;
+}
+p::first-line{
+    font-size: 32px;
+}
+p::selection{
+}
+#Estudios>ul>li:first-child>a::after{
+    content: '" - after"';
+}
+#Estudios>ul>li:last-child>a::before{
+    content: '"before - "'
+}
+#Estudios>ul>li:nth-child(2)>a::after{
+    content: '"Hijo #2"'
 }
