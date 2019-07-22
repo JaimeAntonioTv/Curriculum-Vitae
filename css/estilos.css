@@ -4,3 +4,17 @@ body{
 footer{
     margin-top: 20px;
 }
+#contenedor{
+font-family: Helvetica;
+font-size: 16px;
+}
+#encabezado{
+    display: block;
+    margin: 0 auto;
+}
+.itemIndice{
+    list-style-type: upper-roman; 
+}
+.enlace{
+    color: red;
+}
