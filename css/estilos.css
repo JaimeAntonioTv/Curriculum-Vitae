@@ -28,19 +28,19 @@ img[src$='.png'], img[src$='.jpg']{
     border: 1px solid black;
     border-radius: 5px;
 }
-*{ /* se aplica a todos los elementos*/
+*{ /*el selector asterisco no depende de otros selectores para funcionar*/
     margin: 1vh 1vw;
 }
-h1 + h2{ /*h2 precedido por h1*/
+h1 + h2{ /*sirve para referenciar un elemento con la condición estricta de que el segundo elemento debe estar precedido del primer elemento.*/
     text-decoration: underline;
 }
-h2 ~ p{ /*todos los elementos p hijos directos de h2*/
+h2 ~ p{ /*seleciona todos los p que estén precedidos por un h2*/
     text-align: justify;
 }
-article > h2{/*hace referencia al primer hijo directo de article*/
+article > h2{/*hace referencia a todos los elementos que sean hijos directos de la etiqueta o elemento*/
     text-decoration: underline;
 }
 
-ul li{/*no exige que sea el primer hijo directo*/
+ul li{/*funciona muy parecido al selector de hijo directo, pero no es tan estricto*/
     list-style-type: circle;
 }
